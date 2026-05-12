@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visitenkarte HMBS</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            
+            background-color: #1a1a2e;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 1000px;
+            width: 90%;
+            
+            
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        
+
+
+        h1 {
+            color: #E0E9EC;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+			color: #E0E9EC;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+        
+        h3 {
+            color: #E0E9EC;
+            font-size: 2rem;
+            font-style: italic;
+            font-family: Verdana;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        
+        a:link {
+			color: #E0E9EC;
+		}
+		
+		a:hover {
+			font-weight: bold;
+			text-shadow: 0 0 2px #00677F;
+		}
+		
+		a:visited {
+			color: #E0E9EC;
+		}
+        
+        .hmbsBlue {
+			color: #00677F;
+		}
+
+        p, ul {
+            color: #E0E9EC;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        button {
+			background-color: #5c6589;
+			border-radius: 30px;
+			border: solid 3px white;
+			padding: 10px;
+			margin: 5px;
+		}
+		
+		button:hover {
+			background-color: #6d79a9;
+			padding: 15px;
+			margin: 0px;
+			text-shadow: 0 0 2px #00677F;
+			font-weight: bold;
+			border-radius: 35px;
+		}
+		
+		#btField {
+			display:flex;
+			flex-direction: column;
+			text-align: center;
+            padding: 2rem;
+            width: 90%;
+            margin-left: 5%;
+            justify-content: stretch;
+			flex-wrap: nowrap;    
+					}
+					
+		.field {
+			width: 100%;
+		}
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            
+            p {
+                font-size: 1.4rem;
+            }
+            
+            .container {
+                padding: 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 5rem;
+            }
+            
+            p {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 4rem;
+                max-width: 1000px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            h1 {
+                font-size: 6rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                width: 95%;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="justify-content: center; align-items: center; text-align: center;">
+        <h1>Visitenkarte <b class="hmbsBlue">HMBS</b></h1>
+        <h3><b class="hmbsBlue">Hochschule München - Business School</b></h3>
+        
+        <div id="btField">
+			<a href="https://hmbs.hm.edu"><button class="field"><p>Direkt zur Website der HMBS<br>(hmbs.hm.edu)</p></button></a>
+        </div>
+
+        
+    </div>
+    
+    <div id="kontakt" class="container">
+	<h2>Kontakt</h2>
+    <a href="https://osm.org/go/0JAdNcZR-?m=&way=28018009"><img style="height: 15rem" src="https://1drv.ms/i/c/79f284d66eb27139/IQQNRDDb-5hqToYafN5ZJTxjAYScrYmlTEnERd7ZfRT0mLg"></a>
+    <p><b>Adresse: </b><a href="https://osm.org/go/0JAdNcZR-?m=&way=28018009">Gebäude L<br>Am Stadtpark 20<br>81243 München-Pasing</a></p>
+    <p><b>E-Mail: </b><a class href="mailto:sekretariat-hmbs@hm.edu">sekretariat-hmbs@hm.edu</a></p>
+    </div>
+    
+    <h1>Weitere Infos</h1>
+    
+    <div style="text-align: left;" class="container">
+		<h2>Praktikum an der HMBS?</h2>
+		<p>Als Hochschule ist die HM Business School es nicht gewohnt, Praktikanten zu nehmen. Allerdings kann es nicht schaden, sich beim Sekretaritat zu melden (<a href="#kontakt">-> Kontakt</a>) oder direkt einen der Professoren anzuschereiben, die für einen Studiengang verantwortlich sind, für den man sich interessiert.
+		<br><a href="https://hmbs.hm.edu/fakultaet/personen/professuren.de.html">Hier</a> finden Sie eine Liste mit allen Professoren und ihren E-Mail-Adressen.
+		<br>Und <a href="https://hmbs.hm.edu/studierende/schwerpunkte/index.de.html">hier</a> gibt es außerdem eine Übersicht über alle Studienschwerpunkte im Bachelor Betriebswirtschaft.</p>
+	</div>
+	
+	    <div style="text-align: left;" class="container">
+		<h2>Erfahrungsbericht über mein Praktikum</h2>
+		<a href="https://hmbs.hm.edu/aktuelles/newsdetail/news_detailseite_511424.de.html">
+			<img alt="Matthias mit seinem Praktikumsbetreuer. Foto: HMBS" style="float: left; margin-right: 1.5rem; height: 20rem;" src="https://mediapool.hm.edu/media/fk10/fk10_lokal/relaunch_3/startseite_11/news_42/2026_4/schuelerpraktikum_april26/title_image_portrait_m.jpg"></a>
+		<p><b>Für zwei Wochen (vom 13. bis zum 24. April 2026) absolvierte der 17-jährige Schüler Matthias sein schulisches Pflichtpraktikum an der HM Business School.</b></p>
+		<br>
+		<p><i>24/04/2026</i></p>
+		<br>
+		<p>Matthias dazu: “Zugegeben, es ist ziemlich ungewöhnlich, als Schüler sein Praktikum an einer Hochschule zu machen. Dennoch habe ich in dieser kurzen Zeit so viel gelernt wie selten zuvor und kann es allen Interessierten nur empfehlen.“
+
+Während der zwei Wochen bekam er die Gelegenheit, verschiedene betriebswirtschaftliche Lehrbereiche und diverse wissenschaftsstützende Teams innerhalb der HMBS...<i><a href="https://hmbs.hm.edu/aktuelles/newsdetail/news_detailseite_511424.de.html">Weiterlesen</a></i></p>
+		
+    
+    </div>
+    
+    <div style="text-align: left;" class="container">
+		<h2>Berufsmöglichkeiten in der Hochschulverwaltung</h2>
+		<ul>
+		<li><b>Studierendensekretariat</b> – zentrale Anlaufstelle für Studenten</li>
+		<li><b>Dekanat</b> – “Vorzimmer” des Dekans (= des gewählten Chefprofessors), allg. Verwaltungsaufgaben</li>
+		<li><b>International Office</b> – Betreuung “Outgoing Students” (Auslandssemester) und “Incomer” (ausländische Studenten von anderen Hochschulen)</li>
+		<li><b>Bachelor-Office</b> – Beratung rund um die Bachelor-Studiengänge, Ansprechstelle für Studenten und Studieninteressierte</li>
+		<li><b>Master-Office</b> – das Pendant zum Bachelor-Office, nur für den Master-Studiengang</li>
+		<li><b>bwl.berufsbegleitend</b> – Organisation und Bereitstellung von Studienangeboten parallel zur Arbeit</li>
+		<li><b>Kommunikation</b> – Internetauftritt / Social Media, Marketing / Design (Website, Plakate, Flyer etc.)</li>
+		<li><b>Wirtschaftskooperation</b> – Verbindung zur freien Wirtschaft</li>
+		<li><b>Bibliothek</b> – Verwaltung der 3-stöckigen Bibliothek</li>
+		<li><b>Zentrale IT</b> – Bereitstellung Online-Dienste, Hilfe bei technischen Problemen</li>
+		<li><b>Medientechnik</b> – Instandhaltung der technischen Ausstattung (Beamer, Mikrofone & Lautsprecher etc.)</li>
+		</ul>
+	</div>
+    
+    <div style="text-align: left;" class="container">
+		<p style="font-size: 1rem;">Verantwortlich für den Inhalt: <b>Matthias Meyer</b>
+		<br>E-Mail: <a href="mailto:60808995@hbs.mtk.de">60808995@hbs.mtk.de</a></p>
+	</div>
+	
+
+
+</body>
+</html>
